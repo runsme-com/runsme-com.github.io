@@ -1,0 +1,63 @@
+name: Deploy Nuxt3 to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+# 顶层统一权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          # 如果用pnpm/yarn/bun，cache会被corepack自动接管
+
+      - name: Cache build artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            .nuxt
+          key: ${{ runner.os }}-nuxt-${{ hashFiles('package*.json','bun.lockb','pnpm-lock.yaml','yarn.lock') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with github_pages preset
+        run: npx nuxt build --preset github_pages
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.output/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
