@@ -26,3 +26,4 @@ logs
 # docs
 docs/.vitepress/dist
 docs/.vitepress/cache
+cache/
