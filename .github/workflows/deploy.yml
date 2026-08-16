@@ -1,39 +1,29 @@
-# Sample workflow for building and deploying a Nuxt3 site to GitHub Pages
-name: Deploy Nuxt3 site to GitHub Pages
+name: Deploy Nuxt + VitePress Docs to GitHub Pages
 
 on:
-  # Runs && pull requset on pushes targeting the `main` branch. Change this to `master` if you're
-  # using the `master` branch as the default branch.
   push:
     branches: [main]
-  # PR build checkup ：Merge 之前 验证 docs 能不能正常 pack，防止 main merge之后才发现 build 报错
   pull_request:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5 # 官方 GitHub Action，把仓库代码下载到 CI runner 虚拟机里面。拿不到项目文件
+        uses: actions/checkout@v5
         with:
-          fetch-depth: 0 # 拉取全部git历史 # Not needed if lastUpdated is not enabled
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v6
@@ -45,15 +35,19 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Install dependencies
+      - name: Install root dependencies
         run: bun install --frozen-lockfile
 
-      - name: Build with github_pages preset
-        # Nuxt 内置 github_pages 预设打包生成纯静态站点文件，适配 GitHub Pages。
-        run: npx nuxt build --preset github_pages
+      - name: Build Nuxt (root site / )
+        run: bun run nuxt build --preset github_pages
+
+      - name: Build VitePress docs (/docs)
+        run: bun run docs:build
+
+      - name: Copy vitepress dist files into nuxt public/docs folder
+        run: |
+          mkdir -p .output/public/docs
+          cp -r docs/.vitepress/dist/* .output/public/docs/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
@@ -61,15 +55,10 @@ jobs:
           path: ./.output/public
 
   deploy:
-    # 上面 build 的 Job 执行成功完成之后，才允许开始运行此 deploy。
     needs: build
-
-    # PR只构建不部署，仅push(main) /手动触发才执行部署
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-
     environment:
       name: github-pages
-      # deploy‑pages Action 执行成功之后输出站点最终访问地址
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     name: Deploy
