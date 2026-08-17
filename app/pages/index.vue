@@ -12,7 +12,7 @@
         <a href="https://runsme-com.github.io/docs/">
           <img src="https://img.shields.io/badge/Docs‑Site‑Blog‑Document-3498db" alt="Official Documentation Site" />
         </a>
-        <img src="https://komarev.com/ghpvc/?username=runsme-com&label=Views&color=orange&style=flat" alt="访问量统计" />
+        <img src="https://komarev.com/ghpvc/?username=runsme-com&label=Views&color=orange&style=flat" alt="访问量统计" class="badge-img" />
       </div>
       <blockquote class="hero-quote">
         An open‑source engineering team, submits pull‑requests, resolves bugs,
@@ -160,9 +160,16 @@
 
 .badge-wrap {
   display: flex;
+  align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
+}
+
+.badge-wrap img {
+  display: block;
+  height: 20px;
+  object-fit: contain;
 }
 
 .hero-quote {
