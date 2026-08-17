@@ -12,20 +12,16 @@ next:
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-17 00:15:23
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-18 01:42:26
+ * @LastEditTime: 2026-08-18 01:43:35
  * @FilePath: docs\readme\index.md
  * @Description: README
 -->
 
-
 # Tech Lab <Badge type="tip" text="^1.0.0" />
-
 
 ## Open source projects <Badge type="info" text="default" />
 
-
 <RepoGrid />
-
 
 ## tech stack
 
@@ -76,11 +72,11 @@ next:
 .tech-icon-wrap{
   display:flex;
   flex-wrap:wrap;
-  gap:18px;
+  gap:14px;
   align-items:center;
 }
 .tech-icon-wrap img{
-  height:36px;
+  height:28px;
   width:auto;
 }
 </style>
