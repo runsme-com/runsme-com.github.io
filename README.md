@@ -2,7 +2,7 @@
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-16 10:28:49
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-18 00:13:24
+ * @LastEditTime: 2026-08-18 01:48:00
  * @FilePath: \runsme-com.github.io\README.md
  * @Description: `https://runsme-com.github.io/` runsme-com | Runsme‑tech‑lab official site monorepo documentation
 -->
@@ -25,7 +25,9 @@ npm -v
 npm list -g
 # 安装 bun(如上一步有则省略这一步)
 npm install -g bun
-# 构建
+# 检查 bun
+bun -v
+# 安装依赖
 bun i
 # develop 开发
 bun run dev
