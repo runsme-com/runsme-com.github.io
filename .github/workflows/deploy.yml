@@ -13,8 +13,14 @@ permissions:
   id-token: write
 
 concurrency:
+  # 同一个分组内的工作流任务互斥 + 禁用系统内置工作流（临时解决办法: 手动删除 pages build and deployment 内置生成的产物）
   group: pages
-  cancel-in-progress: false
+  # 连续多次推送，自动取消还没跑完的 同一个 group 中的旧构建，避免堆积多个部署任务互相覆盖
+  # false: 任务排队，新旧两个任务全部跑完，在当前后面部署时间长，易造成部署打架、artifact 覆盖;
+  # 该任务适合 true。设置为 true 只部署最新更新的 action
+  # To also cancel any currently running job or workflow in the same
+  # concurrency group, specify cancel-in-progress: true.
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -48,6 +54,14 @@ jobs:
         run: |
           mkdir -p .output/public/docs
           cp -r docs/.vitepress/dist/* .output/public/docs/
+
+      - name: Print directory structure for debug
+        run: |
+          echo "===== .output/public ====="
+          ls -l -a .output/public
+          echo ""
+          echo "===== .output/public/docs ====="
+          ls -l -a .output/public/docs
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
