@@ -1,75 +1,67 @@
-# Nuxt Minimal Starter
+<!--
+ * @Author: Skixkk skixkk7@gmail.com
+ * @Date: 2026-08-16 10:28:49
+ * @LastEditors: Skixkk skixkk7@gmail.com
+ * @LastEditTime: 2026-08-18 00:13:24
+ * @FilePath: \runsme-com.github.io\README.md
+ * @Description: `https://runsme-com.github.io/` runsme-com | Runsme‑tech‑lab official site monorepo documentation
+-->
+# Runsme‑tech‑lab
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Deploy Nuxt + VitePress Docs to GitHub Pages](https://github.com/runsme-com/runsme-com.github.io/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/runsme-com/runsme-com.github.io/actions/workflows/deploy.yml)
 
-## Setup
+This repository contains source code for our main landing website and document blog platform.
 
-Make sure to install dependencies:
+> Official community homepage & documentation website for Runsme‑tech‑lab open‑source organisation
 
-```bash
-# npm
-npm install
+## Quick Start
 
-# pnpm
-pnpm install
+- [ilibili 教程视频 预留位](https://github.com/runsme-com)
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
+```Bash
+node -v
+npm -v
+# 查看 有没有 bun
+npm list -g
+# 安装 bun(如上一步有则省略这一步)
+npm install -g bun
+# 构建
+bun i
+# develop 开发
 bun run dev
+bun run docs:dev
+# commit && push 后 github action 会自动构建部署
 ```
 
-## Production
+## Tech Stack
 
-Build the application for production:
+基于 `Nuxt` 的 `Minimal` 建立 `/` 构建 网站系统; 基于 `vitepress` 建立 `/docs` 构建 博客系统
 
-```bash
-# npm
-npm run build
+- Main site(`/`): Nuxt (Minimal)
+- Docs & Blog(`/docs`): VitePress
+- Package manager: Bun
+- Deployment: GitHub Pages
+- CI: GitHub Actions
 
-# pnpm
-pnpm build
+## Project Structure
 
-# yarn
-yarn build
-
-# bun
-bun run build
+```text
+app/                # Nuxt minimal main website root
+├── app.vue
+└── pages/
+    └── index.vue   # Homepage entry
+docs/               # VitePress documentation & blog source
 ```
 
-Locally preview production build:
+## Organisation Introduction
 
-```bash
-# npm
-npm run preview
+Runsme‑tech‑lab is an independent‑focused open‑source engineering community‑run organisation.
+Our core mission is delivering high‑quality contributions to the global open‑source ecosystem.
 
-# pnpm
-pnpm preview
+For detailed mission, roadmap, contribution standards and recruitment information, please visit our official homepage.
 
-# yarn
-yarn preview
+- [open source runsme.com](https://github.com/runsme-com)
 
-# bun
-bun run preview
-```
+## License
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+MIT
