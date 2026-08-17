@@ -2,11 +2,17 @@
   <div class="page-container">
     <header class="hero">
       <h1>Hi there 👋</h1>
-      <div class="counter-row">
-        <img
-          src="https://komarev.com/ghpvc/?username=runsme-com&label=Views&color=orange&style=flat"
-          alt="Page view counter"
-        />
+      <div class="badge-wrap">
+        <a href="https://github.com/runsme-com">
+          <img src="https://img.shields.io/badge/GitHub‑Org‑Profile-24292f?logo=github" alt="GitHub Organisation Profile" />
+        </a>
+        <a href="https://github.com/runsme-com/runsme-com.github.io">
+          <img src="https://img.shields.io/badge/Homepage‑Repo-sourcecode-8c36db" alt="Homepage Source Repository" />
+        </a>
+        <a href="https://runsme-com.github.io/docs/">
+          <img src="https://img.shields.io/badge/Docs‑Site‑Blog‑Document-3498db" alt="Official Documentation Site" />
+        </a>
+        <img src="https://komarev.com/ghpvc/?username=runsme-com&label=Views&color=orange&style=flat" alt="访问量统计" />
       </div>
       <blockquote class="hero-quote">
         An open‑source engineering team, submits pull‑requests, resolves bugs,
@@ -152,7 +158,10 @@
   color: #8c36db;
 }
 
-.counter-row {
+.badge-wrap {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
 
