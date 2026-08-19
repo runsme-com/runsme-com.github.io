@@ -3,15 +3,15 @@ prev:
   text: 'Prompt'
   link: '/prompt'
 next: 
-  text: 'Our Team'
-  link: '/our-team'
+  text: 'Hackathon'
+  link: '/hackathon'
 ---
 
 <!--
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-14 18:43:35
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-18 01:21:14
+ * @LastEditTime: 2026-08-19 12:29:17
  * @FilePath: \merchant-admin\docs\github-lgtm\index.md
  * @Description: github LGTM and so on
 -->
