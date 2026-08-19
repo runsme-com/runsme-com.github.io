@@ -27,6 +27,15 @@ hero:
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<!--
+ * @Author: Skixkk skixkk7@gmail.com
+ * @Date: 2026-08-18 02:00:19
+ * @LastEditors: Skixkk skixkk7@gmail.com
+ * @LastEditTime: 2026-08-19 12:24:16
+ * @FilePath: \runsme-com.github.io\docs\index.md
+ * @Description: /index /
+-->
+
 <!-- # Docs‑Blog -->
 
 Welcome to the documentation blog of Runsme Open Source Technology Lab.
