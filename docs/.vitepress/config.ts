@@ -76,6 +76,7 @@ export default withMermaid(
             { text: 'Prompt', link: '/prompt' },
             { text: 'github LGTM', link: '/github-lgtm' },
             { text: 'Hackathon', link: '/hackathon' },
+            { text: 'Devoss', link: '/devoss' },
             { text: 'Our Team', link: '/our-team' },
           ]
         }
