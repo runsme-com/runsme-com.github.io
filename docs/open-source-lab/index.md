@@ -1,11 +1,21 @@
+---
+prev:
+  text: 'github LGTM'
+  link: '/github-lgtm'
+next: 
+  text: 'Team & Contributors'
+  link: '/team'
+---
+
 <!--
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-19 18:58:42
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-20 14:32:56
+ * @LastEditTime: 2026-08-20 14:09:42
  * @FilePath: \runsme-com.github.io\docs\open-source-lab\index.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Description: Open‑Source‑Lab long‑term thinking & product mindset
 -->
+
 # Open source Lab
 
 判断一款产品是否具备价值，并不取决于能否实现技术开发，核心在于三个问题：它在解决谁的痛点、满足了哪些真实需求、商业模式是否成立。
