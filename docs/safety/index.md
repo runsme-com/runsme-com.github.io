@@ -1,11 +1,21 @@
+---
+prev:
+  text: 'github LGTM'
+  link: '/github-lgtm'
+next: 
+  text: 'Our Team'
+  link: '/our-team'
+---
+
 <!--
  * @Author: Skixkk skixkk7@gmail.com
- * @Date: 2026-08-19 18:41:11
+ * @Date: 2026-08-20
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-20 14:38:52
+ * @LastEditTime: 2026-08-20
  * @FilePath: \runsme-com.github.io\docs\safety\index.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Description: Open‑source security & corporate open‑source strategy
 -->
+
 # 安全策略
 
 企业在使用外部开源项目时，需要完成许可证合规核查、评估项目健康度、排查安全风险；同时也可以从活跃贡献者当中发掘潜在人才。
