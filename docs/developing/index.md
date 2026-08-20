@@ -1,10 +1,10 @@
 ---
 prev:
-  text: 'github LGTM'
+  text: 'Devoss'
   link: '/github-lgtm'
 next: 
-  text: 'Our Team'
-  link: '/our-team'
+  text: 'Safety'
+  link: '/safety'
 ---
 
 
@@ -12,7 +12,7 @@ next:
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-19 17:53:21
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-20 14:31:13
+ * @LastEditTime: 2026-08-20 14:43:52
  * @FilePath: \runsme-com.github.io\docs\developing\index.md
  * @Description: open source challenges |　开源程序办公室
 -->

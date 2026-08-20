@@ -1,17 +1,17 @@
 ---
 prev:
-  text: 'github LGTM'
-  link: '/github-lgtm'
+  text: 'Developing'
+  link: '/developing'
 next: 
-  text: 'Our Team'
-  link: '/our-team'
+  text: 'Open source Lab'
+  link: '/open-source-lab'
 ---
 
 <!--
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-20
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-20
+ * @LastEditTime: 2026-08-20 14:44:53
  * @FilePath: \runsme-com.github.io\docs\safety\index.md
  * @Description: Open‑source security & corporate open‑source strategy
 -->
@@ -46,8 +46,8 @@ next:
 企业需要警惕「凡事全部自研」的思维误区。
 部分开源项目已经有成熟第三方团队，可以提供咨询、定制开发、运维支持等服务。优先选择外部专业服务商，往往比投入大量资源从零开发更加高效。
 
-业务合作邮箱：contact@runsme.com
-开源专项沟通邮箱：opensource@runsme.com
+业务合作邮箱：`contact@runsme.com`
+开源专项沟通邮箱：`opensource@runsme.com`
 
 ## Refs
 

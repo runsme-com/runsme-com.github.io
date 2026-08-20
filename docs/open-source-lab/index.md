@@ -1,10 +1,10 @@
 ---
 prev:
-  text: 'github LGTM'
-  link: '/github-lgtm'
+  text: 'Safety'
+  link: '/safety'
 next: 
-  text: 'Team & Contributors'
-  link: '/team'
+  text: 'Our Team'
+  link: '/our-team'
 ---
 
 <!--

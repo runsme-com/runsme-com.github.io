@@ -2,7 +2,7 @@
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-16 11:28:05
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-19 18:41:26
+ * @LastEditTime: 2026-08-20 14:45:59
  * @FilePath: \runsme-com.github.io\docs\.vitepress\config.ts
  * @Description: 让该 docs/ 放在 url `/docs`，不跟 Nuxt 抢 `/` main route ( or say main domain )
  */
@@ -79,7 +79,7 @@ export default withMermaid(
             { text: 'Devoss', link: '/devoss' },
             { text: 'Developing', link: '/developing' },
             { text: 'Safety', link: '/safety' },
-            { text: 'Open source lab', link: '/open-source-lab' },
+            { text: 'Open source Lab', link: '/open-source-lab' },
             { text: 'Our Team', link: '/our-team' },
           ]
         }
