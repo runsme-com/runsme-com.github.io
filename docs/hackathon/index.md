@@ -3,15 +3,15 @@ prev:
   text: 'github LGTM'
   link: '/github-lgtm'
 next: 
-  text: 'Devoss'
-  link: '/devoss'
+  text: 'Developing'
+  link: '/developing'
 ---
 
 <!--
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-19 12:26:41
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-20 14:42:28
+ * @LastEditTime: 2026-08-20 14:52:18
  * @FilePath: \runsme-com.github.io\docs\hackathon\index.md
  * @Description: Complete Guide to Hackathon
 -->

@@ -1,7 +1,7 @@
 ---
 prev:
-  text: 'Devoss'
-  link: '/github-lgtm'
+  text: Hackathon'
+  link: '/hackathon'
 next: 
   text: 'Safety'
   link: '/safety'
