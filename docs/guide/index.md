@@ -11,7 +11,7 @@ next:
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026‑08‑18
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-18 01:48:46
+ * @LastEditTime: 2026-08-21 17:07:49
  * @FilePath: docs\guide\index.md
  * @Description: Project development guide
 -->
@@ -31,7 +31,7 @@ next:
 
 ## Quick Start
 
-- [ilibili 教程视频 预留位](https://github.com/runsme-com)
+- [bilibili 教程视频: 用 github 构建个人网站主页](https://www.bilibili.com/video/BV1yX8q64EB7)
 
 ```Bash
 node -v
