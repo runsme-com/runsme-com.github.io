@@ -2,7 +2,7 @@
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-16 10:28:49
  * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-18 01:48:00
+ * @LastEditTime: 2026-08-24 03:07:36
  * @FilePath: \runsme-com.github.io\README.md
  * @Description: `https://runsme-com.github.io/` runsme-com | Runsme‑tech‑lab official site monorepo documentation
 -->
@@ -16,7 +16,7 @@ This repository contains source code for our main landing website and document b
 
 ## Quick Start
 
-- [ilibili 教程视频 预留位](https://github.com/runsme-com)
+- [bilibili 手把手教程视频](https://www.bilibili.com/video/BV1yX8q64EB7/)
 
 ```Bash
 node -v

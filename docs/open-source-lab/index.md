@@ -41,6 +41,20 @@ next:
 
 踏实做事，做实事。做喜欢热爱的事情。
 
+## 大学到工作
+
+- 实习
+- 开源
+- 项目
+- 专业特长/交叉学科/交叉技能
+
+## 什么地方需要 编程技术
+
+- 数据分析与挖掘，数据预测
+- 商业分析
+- 工业自动化
+- 量化金融
+
 ## Ref
 
 - [What is an open source program office? And why do you need one?](https://opensource.com/business/16/5/whats-open-source-program-office)
