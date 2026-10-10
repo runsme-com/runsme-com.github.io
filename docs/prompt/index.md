@@ -17,8 +17,7 @@ next:
 #### 必要一
 
 ```text
-1.现在基于我的代码给出完整代码，只允许修改相关代码，不相干的代码，即使是注释也不能修改。代码中禁用 emoji ，
-必要的图片需求使用 `src\static\images` 中的png图片
+1.现在基于我的代码给出完整代码，只允许修改相关代码，不相干的代码，即使是注释也不能修改。
 针对回复：给出代码即可，如有必要解释放在代码注释中
 
 2.生成修改后的遵循Angular 提交规范的英文版 Git Commit Comments (English)：
@@ -70,9 +69,11 @@ next:
 ```Text
 以代码的形式返回，Markdown 格式 PR 评审评论，符合 Pull request comment 规范
 
-PR Title:
+## PR Title:
 
-PR Description：
+## PR Description:
+
+## Leave a comment
 
 ```
 
