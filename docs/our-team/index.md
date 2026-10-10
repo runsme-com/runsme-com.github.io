@@ -10,8 +10,8 @@ next:
 <!--
  * @Author: Skixkk skixkk7@gmail.com
  * @Date: 2026-08-14 19:23:30
- * @LastEditors: Skixkk skixkk7@gmail.com
- * @LastEditTime: 2026-08-18 01:01:16
+ * @LastEditors: Skixkk <166358870+Skixkk@users.noreply.github.com>
+ * @LastEditTime: 2026-10-10 20:31:42
  * @FilePath: \merchant-admin\docs\our-team\index.md
  * @Description: file
 -->
@@ -58,6 +58,14 @@ const members = [
     title: 'Creator | Quant & Full Stack',
     links: [
       { icon: 'github', link: 'https://github.com/Skixkk' },
+    ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/338016399?v=4',
+    name: 'jiayunchao',
+    title: 'ML',
+    links: [
+      { icon: 'github', link: 'https://github.com/jiayunchao1017' },
     ]
   },
 ]
